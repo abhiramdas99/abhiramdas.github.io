@@ -11,7 +11,11 @@
 
     <title>Responsive Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome (For Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Fixed sidebar for desktop */
         .sidebar {
@@ -46,7 +50,7 @@
 
         /* Sections inside content */
         .section {
-            height: 100vh;
+            min-height: 100vh;
             border-bottom: 1px solid #ddd;
             padding-top: 10px;
         }
@@ -179,6 +183,32 @@
     max-height: 80px;
     object-fit: contain;
 }
+
+#projects .card {
+    height: 100%; /* Ensures all cards have the same height */
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .card-img-top {
+    height: 60px; /* Adjust based on preferred image size */
+    /*object-fit: cover; /* Ensures the image fits well */
+}
+
+#projects .card-body {
+    flex-grow: 1; /* Expands to fill available space */
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .card-body .card-text {
+    flex-grow: 1; /* Allows description text to take available space */
+}
+
+#projects .card-body .btn {
+    margin-top: auto; /* Pushes button to the bottom */
+}
+
         
     </style>
 </head>
@@ -189,11 +219,13 @@
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <a href="#main-content" class="active-link">Home</a>  <!-- Links to main content -->
-        <a href="#experience">Work Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#settings">Settings</a>
+        <a href="#main-content" class="active-link">🏠 Home</a>  <!-- Links to main content -->
+        <a href="#experience">💼 Work Experience</a>
+        <a href="#skills">🛠️ Skills</a>
+        <a href="#projects">📁 Projects</a>
+        <a href="#Scripts">💻 Commands & Scripts</a>
+        <a href="#Blogs">📝 Technical Blogs</a>
+        <a href="#MyApps">⚙️ Tools & Application</a>
     </div>
 
     <!-- Main Content -->
@@ -250,7 +282,7 @@
 
         <!-- Tabs for Different Roles -->
         <div class="d-flex justify-content-center flex-wrap">
-            <button class="tab-link active" onclick="openTab(event, '2023-now')">2017 - Now <br><h6>DevOps | SRE | Cloud Eng</h6></button>
+            <button class="tab-link active" onclick="openTab(event, '2023-now')">2017 - Now <br><h7>DevOps | SRE | Cloud Eng</h7></button>
             <button class="tab-link" onclick="openTab(event, '2013-2017')">2013 - 2017<br><h6>ERP Techno Consultant</h6></button>
             <button class="tab-link" onclick="openTab(event, '2006-2013')">2006 - 2013<br><h6>System Admin | Desktop Support</h6></button>
         </div>
@@ -365,79 +397,144 @@
 
 <!-- Project Section -->
 <div id="projects" class="section text-center">
-    <div class="container">
+    <div class="container pb-5">
         <h2>Projects</h2>
         <hr>
-        <!-- Tabs for different project categories -->
-        <div class="d-flex justify-content-center flex-wrap">
-            <button class="tab-link active" onclick="openTab(event, 'Infrastructure')">Infrastructure Architecture</button>
-            <button class="tab-link" onclick="openTab(event, 'Migration')">Migration</button>
-            <button class="tab-link" onclick="openTab(event, 'CI_CD')">CI/CD Pipeline</button>
-            <button class="tab-link" onclick="openTab(event, 'Terraform')">Terraform</button>
-            <button class="tab-link" onclick="openTab(event, 'Monitoring')">Monitoring</button>
-            <button class="tab-link" onclick="openTab(event, 'Fullstack')">Fullstack</button>
-        </div>
-        <hr>
-        <div id="Infrastructure" class="tab-content active">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of Project 1, highlighting key features and technologies used.</p>
-                            <a href="https://github.com/yourgithub/project1" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of Project 2 with a brief summary of your role.</p>
-                            <a href="https://github.com/yourgithub/project2" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Summary of the project's impact and implementation details.</p>
-                            <a href="https://github.com/yourgithub/project3" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
+        <div class="row gy-4">
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/skillbuilder.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Architecture, GitHub Action (CI/CD), Slack Automation, CloudWatch, SES, SNS, 
+                            ALB, S3, Route53, Node.js, RDS, AWS Amplify
+                        </p>
+                        <a href="https://github.com/yourgithub/project1" class="btn btn-primary" target="_blank">TechOps Detail ..</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="Migration" class="tab-content">
-            <p>Details about Migration projects...</p>
-        </div>
-        <div id="CI_CD" class="tab-content">
-            <p>Details about CI/CD Pipeline projects...</p>
-        </div>
-
-        <div id="Terraform" class="tab-content">
-            <p>Details about Terraform projects...</p>
-        </div>
-
-        <div id="Monitoring" class="tab-content">
-            <p>Details about Monitoring projects...</p>
-        </div>
-
-        <div id="Fullstack" class="tab-content">
-            <p>Details about Fullstack projects...</p>
-        </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/bomann.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud, GitHub Action (CI/CD), Email Automation, 
+                            Laravel, MongoDB, Shell Script, Lightsail
+                        </p>
+                        <a href="https://github.com/yourgithub/project2" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/uniquex.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>    
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project3" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/mindset.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/kopling.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <img src="img/tis.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-3">
+                <div class="card shadow-lg h-100">
+                    <img src="img/byggehytte.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg h-100">
+                    <img src="img/pronex.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-3">
+                <div class="card shadow-lg h-100">
+                    <img src="img/norsk.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
+                            ALB, ECS Fargate, ECR, Docker
+                        </p>
+                        <a href="https://github.com/yourgithub/project4" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>            
+        </div> <!-- End of row -->
     </div>
 </div>
 
+<div id="Scripts" class="section">
+    <h2>My Command & Scripts</h2>
+    <p>Settings section goes here.</p>
+</div>
 
-        <div id="settings" class="section">
-            <h2>Settings</h2>
+        <div id="Blogs" class="section">
+            <h2>My Blogs</h2>
             <p>Settings section goes here.</p>
         </div>
+<div id="MyApps" class="section">
+    <h2>My Blogs</h2>
+            <p>Settings section goes here.</p>
+</div>  
     </div>
 
     <!-- JavaScript for Sidebar Toggle -->
@@ -498,27 +595,6 @@
             });
         });
 
-        /**************************************
-         * Project Tab
-         * ************************************/
-
-        function openTab(event, tabName) {
-        // Hide all tab contents
-        var tabContents = document.querySelectorAll(".tab-content");
-        tabContents.forEach(function (content) {
-            content.style.display = "none";
-        });
-
-        // Remove active class from all tab buttons
-        var tabLinks = document.querySelectorAll(".tab-link");
-        tabLinks.forEach(function (link) {
-            link.classList.remove("active");
-        });
-
-        // Show the selected tab content and highlight the clicked tab
-        document.getElementById(tabName).style.display = "block";
-        event.currentTarget.classList.add("active");
-    }
 
     // Set default tab to display
     document.addEventListener("DOMContentLoaded", function () {

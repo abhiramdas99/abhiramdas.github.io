@@ -23,3 +23,4 @@ function openResume() {
     window.open(resumeUrl, "_blank"); // Opens in a new tab
 }
 
+

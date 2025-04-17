@@ -16,97 +16,11 @@
 
     <!-- Font Awesome (For Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- customized master style sheet -->
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        /* Fixed sidebar for desktop */
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #343a40;
-            color: white;
-            padding-top: 20px;
-            transition: left 0.3s ease;
-        }
-
-        .sidebar a {
-            color: white;
-            padding: 10px 15px;
-            display: block;
-            text-decoration: none;
-        }
-
-        .sidebar a:hover {
-            background: #495057;
-        }
-
-        /* Content area */
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-            transition: margin-left 0.3s ease;
-        }
-
-        /* Sections inside content */
-        .section {
-            min-height: 100vh;
-            border-bottom: 1px solid #ddd;
-            padding-top: 10px;
-        }
-
-        /* Responsive: Hide sidebar and show toggle button on mobile */
-        @media (max-width: 768px) {
-            .sidebar {
-                left: -250px;
-            }
-            .content {
-                margin-left: 0;
-            }
-            .toggle-btn {
-                display: block !important;
-            }
-        }
-
-        /* Sidebar Open */
-        .sidebar.show {
-            left: 0;
-        }
-
-        /* Toggle button */
-        .toggle-btn {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            background: #343a40;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            z-index: 1000;
-            display: none;
-        }
-
-        
-        
-        .sidebar a {
-            color: white;
-            padding: 10px 15px;
-            display: block;
-            text-decoration: none;
-        }
-
-        .sidebar a:hover, 
-        .sidebar a.active-link {
-            background: #495057;
-        }
-
-        .card-img-top {
-            width: 100%;
-            height: auto;
-        }
-
-
         /* Project tab */
         .tab-link {
         background: #343a40;
@@ -131,10 +45,6 @@
         display: block;
         }
 
-        /* Proper spacing between sections */
-.section-separator {
-    height: 50px; /* Adjust spacing as needed */
-}
 
 /** Exp Section **/
 #experience .tab-content {
@@ -213,6 +123,16 @@
     </style>
 </head>
 <body>
+     <!-- Top Fixed Header -->
+     <nav class="navbar navbar-dark bg-dark fixed-top px-3" >
+        <div class="container-fluid d-flex align-items-center">
+            <!-- Profile Photo -->
+            <img src="img/my-profile.jpg" alt="Profile" class="rounded-circle" width="40" height="40">
+                
+            <!-- Page Title -->
+            <span class="text-light ms-3 fw-bold">Abhiram Das Portfolio</span>
+        </div>
+    </nav>   
 
     <!-- Toggle Button (Only for Mobile) -->
     <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
@@ -222,16 +142,18 @@
         <a href="#main-content" class="active-link">🏠 Home</a>  <!-- Links to main content -->
         <a href="#experience">💼 Work Experience</a>
         <a href="#skills">🛠️ Skills</a>
+        <a href="#edu-certs">🎓 Edu & Certs</a>
         <a href="#projects">📁 Projects</a>
         <a href="#Scripts">💻 Commands & Scripts</a>
         <a href="#Blogs">📝 Technical Blogs</a>
         <a href="#MyApps">⚙️ Tools & Application</a>
+        
     </div>
 
     <!-- Main Content -->
     <div class="content" id="content">
         <!-- Home Section -->
-<div id="main-content" class="section text-center">
+<div id="main-content" class="section text-center bg-profile">
     <div class="container">
         <div class="row">
             <!-- Name and Title -->
@@ -248,7 +170,7 @@
         <!-- Two-Column Layout -->
         <div class="row mt-4 d-flex align-items-center">
             <!-- Left Column: Brief About -->
-            <div class="col-md-6 text-start">
+            <div class="col-md-6 text-start shadow-box text-white p-4 rounded">
                 <h4>About Me</h4>
                 <p>
                     Experienced DevOps & Cloud Engineer with a passion for automation, reliability, and cloud infrastructure.
@@ -260,14 +182,8 @@
                 <div class="mt-3">
                     <a href="https://www.linkedin.com/in/abhiram-das-5781b517/" target="_blank" class="btn btn-primary me-2">LinkedIn</a>
                     <a href="https://github.com/abhiramdas99/" target="_blank" class="btn btn-dark me-2">GitHub</a>
+                    <a href="https://blogs.abhiramdas.site/" target="_blank" class="btn btn-info me-2">My Blog</a>
                     <a href="img/abhiramdas-cv.pdf" download class="btn btn-success">Download CV</a>
-                </div>
-            </div>
-
-            <!-- Right Column: Profile Photo Card -->
-            <div class="col-md-6 d-flex justify-content-center">
-                <div class="card p-3 shadow-lg" style="max-width: 250px; border-radius: 15px;">
-                    <img src="img/my-profile.jpg" alt="Abhiram Das" class="card-img-top rounded-circle" style="border-radius: 15px;">
                 </div>
             </div>
         </div>
@@ -332,6 +248,80 @@
         </div> 
     </div>
 </div>
+
+<!-- Education & Certifications Section -->
+<div id="edu-certs" class="section text-center">
+    <div class="container">
+        <h2>🎓 Education & Certifications</h2>
+        <hr>
+
+        <div class="timeline">
+            <!-- Certifications -->
+            <div class="timeline-item">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h4>AWS Certified Solutions Architect – Associate</h4>
+                    <p><strong>Issued by:</strong> Amazon Web Services (AWS)</p>
+                    <a href="https://www.credly.com/badges/example" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h4>Microsoft Certified: Azure Administrator</h4>
+                    <p><strong>Issued by:</strong> Microsoft</p>
+                    <a href="https://www.credly.com/badges/example" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2005</div>
+                <div class="timeline-content">
+                    <h4>Jetking Certified Hardware & Networking Engineer</h4>
+                    <p><strong>Issued by:</strong> Jetking</p>
+                    <a href="https://www.jetking.com/" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- Post Graduation -->
+            <div class="timeline-item">
+                <div class="timeline-date">2014 - 2016</div>
+                <div class="timeline-content">
+                    <h4>Master’s Degree in Computer Science</h4>
+                    <p><strong>Institution:</strong> XYZ University</p>
+                </div>
+            </div>
+
+            <!-- Graduation -->
+            <div class="timeline-item">
+                <div class="timeline-date">2010 - 2014</div>
+                <div class="timeline-content">
+                    <h4>Bachelor’s Degree in Computer Science</h4>
+                    <p><strong>Institution:</strong> XYZ University</p>
+                </div>
+            </div>
+
+            <!-- Schooling -->
+            <div class="timeline-item">
+                <div class="timeline-date">2008 - 2010</div>
+                <div class="timeline-content">
+                    <h4>Higher Secondary Education (Class 12)</h4>
+                    <p><strong>Institution:</strong> ABC School</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2006 - 2008</div>
+                <div class="timeline-content">
+                    <h4>Secondary Education (Class 10)</h4>
+                    <p><strong>Institution:</strong> ABC School</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
    
 
 
@@ -348,6 +338,8 @@
                 <div class="progress">
                     <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                 </div>
+                <a href="#certifications" class="cert-link">View Certification</a>
+
                 <p class="mt-3"><strong>Azure Services</strong></p>
                 <div class="progress">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
@@ -394,6 +386,9 @@
         </div>
     </div>
 </div>
+
+
+
 
 <!-- Project Section -->
 <div id="projects" class="section text-center">
@@ -514,7 +509,7 @@
                             AWS Cloud Architecture, Terraform, Bitbucket Pipelines, S3, IAM Policy, IAM, 
                             ALB, ECS Fargate, ECR, Docker
                         </p>
-                        <a href="projects/norsk/" class="btn btn-primary" target="_blank">View Project</a>
+                        <a href="projects/norsk/" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
             </div>            

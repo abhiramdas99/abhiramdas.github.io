@@ -9,7 +9,7 @@
     <meta property="og:image" content="your-photo.jpg">
     <meta property="og:url" content="https://abhiramdas99.github.io/">
 
-    <title>Responsive Dashboard</title>
+    <title>Abhiram Das portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -145,9 +145,9 @@
         <a href="#edu-certs">🎓 Edu & Certs</a>
         <a href="#projects">📁 Projects</a>
         <a href="#Scripts">💻 Commands </a>
-        <a href="#Blogs">📝 My Blogs</a>
-        <a href="#MyApps">📝 My Apps</a>
-        <a href="#MyTools">⚙️ My Tools</a>
+        <a href="#Blogs">📝 Blogs</a>
+        <a href="#MyApps">📝 Apps</a>
+        <a href="#MyTools">⚙️ Tools</a>
         
     </div>
 
@@ -192,138 +192,116 @@
 </div>
 
 <!-- Experience Section -->
-<div id="experience" class="section text-center">
+<section id="experience" class="py-5 bg-light">
     <div class="container">
-        <h2>Work Experience</h2>
-        <hr>
-
-        <!-- Tabs for Different Roles -->
-        <div class="d-flex justify-content-center flex-wrap">
-            <button class="tab-link active" onclick="openTab(event, '2023-now')">2017 - Now <br><h7>DevOps | SRE | Cloud Eng</h7></button>
-            <button class="tab-link" onclick="openTab(event, '2013-2017')">2013 - 2017<br><h6>ERP Techno Consultant</h6></button>
-            <button class="tab-link" onclick="openTab(event, '2006-2013')">2006 - 2013<br><h6>System Admin | Desktop Support</h6></button>
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Work Experience</h2>
+            <p class="text-muted">A snapshot of my journey through DevOps, Cloud, ERP, and System Administration</p>
         </div>
-       
 
-        <!-- Work Experience Details -->
-        <div id="2023-now" class="tab-content active text-start">
-            <h4>Cloud Infrastructure Manager | Kilowott | Goa | Jul 2023 – Present</h4>
-            <h5>🛠️ Daily Monitoring & Maintenance Activities:</h5>
-            <ul>
-                <li>Monitoring and troubleshooting cloud infrastructure using Azure Monitor, PM2, AWS CloudWatch, New Relic, and shell scripts.</li>
-                <li>Managing tickets for server upgrades, CI/CD, DNS, SSL, and more via Zoho & Jira.</li>
-            </ul>
+        <!-- Tab Buttons -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="experienceTabs">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab2023-now">
+                    2017 - Now<br><small>DevOps | SRE | Cloud Eng</small>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2013-2017">
+                    2013 - 2017<br><small>ERP Techno Consultant</small>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2006-2013">
+                    2006 - 2013<br><small>System Admin | Desktop Support</small>
+                </button>
+            </li>
+        </ul>
 
-            <h5>🚀 High-Priority & Billable Tasks (Based on BRD):</h5>
-            <ul>
-                <li>Infrastructure, application, and database migration using Azure Migrate, AWS Migration Hub, AWS DMS, and AWS MGN.</li>
-                <li>Setting up project budgets and alert mechanisms in AWS and Azure.</li>
-                <li>Designing cloud infrastructure architecture using Terraform.</li>
-                <li>Implementing Git workflows and CI/CD pipelines with GitHub Actions, Azure DevOps, and AWS DevOps.</li>
-            </ul>
+        <!-- Tab Content -->
+        <div class="tab-content">
 
-            <!-- Related Projects -->
-            <h5>🔗 Related Projects</h5>
-            <div class="d-flex flex-wrap experience-projects">
-                <a href="#project1" class="project-link">
-                    <div class="project-img-container">
-                        <img src="img/skillbuilder.png" alt="Project 1" class="project-icon">
+            <!-- Tab 1: 2017 - Now -->
+            <div class="tab-pane fade show active" id="tab2023-now">
+
+                <div class="accordion" id="experienceAccordion">
+
+                    <!-- Kilowott -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingKilowott">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKilowott">
+                                Cloud Infrastructure Manager | Kilowott | Goa | Jul 2023 – Present
+                            </button>
+                        </h2>
+                        <div id="collapseKilowott" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                            <div class="accordion-body">
+                                <h5>🛠️ Daily Monitoring & Maintenance Activities:</h5>
+                                <ul>
+                                    <li>Monitoring and troubleshooting cloud infrastructure using Azure Monitor, PM2, AWS CloudWatch, New Relic, and shell scripts.</li>
+                                    <li>Managing tickets for server upgrades, CI/CD, DNS, SSL, and more via Zoho & Jira.</li>
+                                </ul>
+
+                                <h5>🚀 High-Priority & Billable Tasks (Based on BRD):</h5>
+                                <ul>
+                                    <li>Infrastructure, application, and database migration using Azure Migrate, AWS Migration Hub, AWS DMS, and AWS MGN.</li>
+                                    <li>Setting up project budgets and alert mechanisms in AWS and Azure.</li>
+                                    <li>Designing cloud infrastructure architecture using Terraform.</li>
+                                    <li>Implementing Git workflows and CI/CD pipelines with GitHub Actions, Azure DevOps, and AWS DevOps.</li>
+                                </ul>
+
+                                <h5>🔗 Related Projects:</h5>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <img src="img/skillbuilder.png" alt="Skillbuilder" class="img-thumbnail" width="100">
+                                    <img src="img/bomann.png" alt="Bomann" class="img-thumbnail" width="100">
+                                    <img src="img/uniquex.png" alt="Uniquex" class="img-thumbnail" width="100">
+                                    <img src="img/mindset.png" alt="Mindset" class="img-thumbnail" width="100">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a href="#project2" class="project-link">
-                    <div class="project-img-container">
-                        <img src="img/bomann.png" alt="Project 2" class="project-icon">
+
+                    <!-- Chowgule -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingChowgule">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChowgule">
+                                IT Infrastructure Manager | Chowgule & Company (P) Ltd. | Goa | Dec 2017 – Jun 2023
+                            </button>
+                        </h2>
+                        <div id="collapseChowgule" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                            <div class="accordion-body">
+                                <h5>🎯 Key Result Areas:</h5>
+                                <ul>
+                                    <li>Managed IT and cloud operations, including ERP development, cloud integration, and CI/CD pipelines.</li>
+                                    <li>Created custom ERP modules to align IT solutions with business processes and improve efficiency.</li>
+                                </ul>
+
+                                <h5>🔗 Projects:</h5>
+                                <ul>
+                                    <li><strong>ERP System Integration & Customization:</strong> Developed custom modules and resolved issues for Oracle JD Edwards ERP, enhancing performance.</li>
+                                    <li><strong>Enterprise System Design & Development:</strong> Led ERP solutions for the education sector and implemented CI/CD pipelines for faster updates.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a href="#project3" class="project-link">
-                    <div class="project-img-container">
-                        <img src="img/uniquex.png" alt="Project 3" class="project-icon">
-                    </div>
-                </a>
-                <a href="#project4" class="project-link">
-                    <div class="project-img-container">
-                        <img src="img/mindset.png" alt="Project 3" class="project-icon">
-                    </div>
-                </a>
+
+                </div> <!-- /accordion -->
+
             </div>
-        </div> 
+
+            <!-- Placeholder for future tabs -->
+            <div class="tab-pane fade" id="tab2013-2017">
+                <p class="text-muted">ERP Techno Consultant content goes here.</p>
+            </div>
+            <div class="tab-pane fade" id="tab2006-2013">
+                <p class="text-muted">System Admin | Desktop Support content goes here.</p>
+            </div>
+        </div> <!-- /tab-content -->
+
     </div>
-</div>
+</section>
 
-<!-- Education & Certifications Section -->
-<div id="edu-certs" class="section text-center">
-    <div class="container">
-        <h2>🎓 Education & Certifications</h2>
-        <hr>
-
-        <div class="timeline">
-            <!-- Certifications -->
-            <div class="timeline-item">
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                    <h4>AWS Certified Solutions Architect – Associate</h4>
-                    <p><strong>Issued by:</strong> Amazon Web Services (AWS)</p>
-                    <a href="https://www.credly.com/badges/example" target="_blank">View Certificate</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">2022</div>
-                <div class="timeline-content">
-                    <h4>Microsoft Certified: Azure Administrator</h4>
-                    <p><strong>Issued by:</strong> Microsoft</p>
-                    <a href="https://www.credly.com/badges/example" target="_blank">View Certificate</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">2005</div>
-                <div class="timeline-content">
-                    <h4>Jetking Certified Hardware & Networking Engineer</h4>
-                    <p><strong>Issued by:</strong> Jetking</p>
-                    <a href="https://www.jetking.com/" target="_blank">View Certificate</a>
-                </div>
-            </div>
-
-            <!-- Post Graduation -->
-            <div class="timeline-item">
-                <div class="timeline-date">2014 - 2016</div>
-                <div class="timeline-content">
-                    <h4>Master’s Degree in Computer Science</h4>
-                    <p><strong>Institution:</strong> XYZ University</p>
-                </div>
-            </div>
-
-            <!-- Graduation -->
-            <div class="timeline-item">
-                <div class="timeline-date">2010 - 2014</div>
-                <div class="timeline-content">
-                    <h4>Bachelor’s Degree in Computer Science</h4>
-                    <p><strong>Institution:</strong> XYZ University</p>
-                </div>
-            </div>
-
-            <!-- Schooling -->
-            <div class="timeline-item">
-                <div class="timeline-date">2008 - 2010</div>
-                <div class="timeline-content">
-                    <h4>Higher Secondary Education (Class 12)</h4>
-                    <p><strong>Institution:</strong> ABC School</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">2006 - 2008</div>
-                <div class="timeline-content">
-                    <h4>Secondary Education (Class 10)</h4>
-                    <p><strong>Institution:</strong> ABC School</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-   
+<!-- Bootstrap 5 JS required -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <!-- Skills Section -->
@@ -339,8 +317,7 @@
                 <div class="progress">
                     <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                 </div>
-                <a href="#certifications" class="cert-link">View Certification</a>
-
+              
                 <p class="mt-3"><strong>Azure Services</strong></p>
                 <div class="progress">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
@@ -388,8 +365,38 @@
     </div>
 </div>
 
-
-
+<!-- Education & Certifications Section -->
+<div id="edu-certs" class="section text-center">
+    <div class="container">
+        <h2>🎓 Education & Certifications</h2>
+        <hr>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="year">2023</div>
+                <h5>Advance Certification in Cloud Computing & DevOps ( IIT Roorkee) </h5>
+                <a target="_blank" href="https://eict.iitr.ac.in/wp-content/uploads/EICT-IITR-IP-B7-015.jpg">view</a>
+              </div>
+            <div class="cert-item">
+              <div class="year">2023</div>
+              <h5>AWS Solutions Architect </h5>
+              <a target="_blank" href="https://www.edureka.co/certificates/mycertificate/8acea2864cbedb61121ba82261d6e58d">view</a>
+            </div>
+            <div class="cert-item">
+              <div class="year">2005</div>
+              <h5>BCA - Bachelor of Computer Applications (Graduation)</h5>
+            </div>
+            <div class="cert-item">
+              <div class="year">2002</div>
+              <h5>Higher Secondary Certificate( 10th + 2) </h5>
+            </div>
+            <div class="cert-item">
+              <div class="year">1998</div>
+              <h5>Secondary School Certificate (Class 10)</h5>
+            </div>
+          </div>
+        
+    </div>
+</div>
 
 <!-- Project Section -->
 <div id="projects" class="section text-center">
@@ -523,15 +530,28 @@
     <p>Settings section goes here.</p>
 </div>
 
-        <div id="Blogs" class="section">
+<div id="Blogs" class="section">
             <h2>My Blogs</h2>
-            <p>Settings section goes here.</p>
-        </div>
+            <div class="blog-card">
+                <!--img src="img/blog.jpg" alt="Blog Banner" class="card-img-top"-->
+                <div class="card-body">
+                    <h5 class="card-title">Daily Logs</h5>
+                    <p class="card-text">Explore my daily tech reflections, code snippets, troubleshooting wins, and more.</p>
+                    <a href="https://blogs.abhiramdas.site/" target="_blank" class="btn btn-primary">Visit Blog</a>
+                </div>
+            </div>
+</div>
+
 <div id="MyApps" class="section">
     <h2>My Blogs</h2>
             <p>Settings section goes here.</p>
-</div>  
-    </div>
+</div> 
+<div id="MyTools" class="section">
+    <h2>MyTools</h2>
+            <p>Settings section goes here.</p>
+</div> 
+
+</div>
 
     <!-- JavaScript for Sidebar Toggle -->
     <script>

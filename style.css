@@ -107,64 +107,41 @@ sidebar
 }
 
 /****cerfication ******/
-/* Timeline Container */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 30px auto;
-    padding-left: 20px;
-}
 
-/* Timeline Item */
-.timeline-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-/* Timeline Date (Left Side) */
-.timeline-date {
-    flex: 0 0 120px;
-    font-size: 14px;
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 30px 10px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .cert-item {
+    background-color: #fefefe;
+    border: 1px solid #f06b2d;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .cert-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cert-item .year {
+    font-size: 20px;
     font-weight: bold;
-    color: #28a745; /* Green Color */
-    text-align: right;
-    padding-right: 40px;
-}
+    color: #f06b2d;
+    margin-bottom: 8px;
+  }
+  
+  
+  
 
-/* Timeline Content (Right Side) */
-.timeline-content {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-}
 
-/* Green Vertical Bar */
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: 110px;
-    width: 3px;
-    height: 100%;
-    background-color: #28a745; /* Green */
-    top: 0;
-}
-
-/* Certification Links */
-.timeline-content a {
-    font-size: 14px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.timeline-content a:hover {
-    text-decoration: underline;
-}
 
 /* Home Page **/
 .bg-profile {
@@ -183,5 +160,45 @@ sidebar
 .shadow-box {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/**blog page setting***/
+.blog-card {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.blog-card .card-body {
+    padding: 15px;
+}
+
+.blog-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-card .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.blog-card .btn:hover {
+    background-color: #0056b3;
 }
 

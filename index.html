@@ -2,69 +2,765 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Abhiram Das - DevOps, Cloud, SRE Portfolio">
-    <meta property="og:title" content="Abhiram Das Portfolio">
-    <meta property="og:description" content="DevOps, Cloud Engineer with expertise in AWS, Azure, Kubernetes, and more.">
-    <meta property="og:image" content="your-photo.jpg">
-    <meta property="og:url" content="https://abhiramdas99.github.io/">
-
-    <title>Abhiram Das portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Font Awesome (For Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- customized master style sheet -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rosure - Web Developer and Designer Portfolio HTML Template">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <title>Rosure - Web Developer and Designer Portfolio HTML Template</title>
 </head>
-<body>
-<!-- Main Content -->
-<div class="content" id="content">
-        <!-- Home Section -->
-    <div id="main-content" class="section text-center bg-profile ">
-        <div class="shadow-box text-white">
-            <div class="container ">
-                <div class="row">
-                    <!-- Name and Title -->
-                    <div class="col-12">
-                        <h2>Abhiram Das</h2>
-                        <h4>DevOps | SRE | Cloud Engineer</h4>
-                    
-                        <!-- Email & Contact Number -->
-                        <p class="mt-2"><strong>Email:</strong> abhiramdas99@gmail.com |
-                        <strong>Contact:</strong> +91 9871011961</p>
-                         
-                         <a href="https://learn.microsoft.com/en-us/users/abhiramdas-7440/transcript/v03qzhlq558m1n2" target="_blank" >
-                           <img style="width:8%" src="img/MicrosoftCertificated_Associate.png" />
-                        </a>
-                        &nbsp;
-                        <a href="https://eict.iitr.ac.in/wp-content/uploads/EICT-IITR-IP-B7-015.jpg" target="_blank" >
-                           <img style="width:8%" src="img/iit-roorkee.png" />
-                        </a>
-                        <hr>
+<body>  
+    <!-- Preloader -->
+    <div id="loader-overlay" class="flex justify-center align-center flex-column gap-20">
+        <div class="loader relative"></div>
+        <h1>Loading...</h1>
+    </div>
 
-                        <p>
-                            DevOps & Cloud Engineer with 15+ years in IT , including 7+ years in DevOps, cloud automation, infrastructure, and 
-                            ERP migration. Skilled in Azure , AWS, Terraform, Kubernetes, Docker, CI / CD, and system monitoring. 
-                            Proven track record in streaming operations and deploying scalable, reliable systems. 
-                        </p>
-                        <hr>
-                        <div class="mt-3">
-                            <a href="https://www.linkedin.com/in/abhiram-das-5781b517/" target="_blank" class="btn btn-transparent">LinkedIn</a>
-                            <a href="#" target="_blank" class="btn btn-transparent">Projects</a>
-                            <a href="https://blogs.abhiramdas.site/" target="_blank" class="btn btn-transparent">My Blog</a>
-                            <a href="img/abhiramdas-cv.pdf" target="_blank" class="btn btn-transparent ">Download CV</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Header -->
+    <header class="flex align-center justify-between w-100">
+        <div class="logo flex align-center justify-between">
+            <div class="logo-content">
+                
             </div>
         </div>
-    </div>
-</div>
-     <!-- Bootstrap 5 JS required -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="flex justify-between gap-30">
+            
+            <div class="icon-menu-content flex justify-center align-center pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+            <!-- Menu nav -->
+            <aside class="aside-nav flex flex-column align-center justify-between">
+                <svg class="close-icon feather feather-x" xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            
+                <nav class="w-100 flex flex-column">
+                    <ul class="w-100 flex justify-center nav__tabs-container">
+                        <li class="nav__tab nav__tab--1 nav__tab--active" data-tab="1">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            </div>
+                            01 Top
+                        </li>
+                        <li class="nav__tab nav__tab--2" data-tab="2">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </div>                            
+                            02 About me
+                        </li>
+                        <li class="nav__tab nav__tab--3" data-tab="3">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                            </div>                            
+                            03 What do I do
+                        </li>
+                        <li class="nav__tab nav__tab--4" data-tab="4">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                            </div>
+                            04 Skills
+                        </li>
+                        <li class="nav__tab nav__tab--5" data-tab="5">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            05 Experience
+                        </li>
+                        <li class="nav__tab nav__tab--6" data-tab="6">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            </div>
+                            06 Projects
+                        </li>
+                        <li class="nav__tab nav__tab--7" data-tab="7">
+                            <div class="content-icon-menu-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            07 Contact
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="bottom-nav flex justify-center flex-column">
+                    <ul class="contact-inf flex gap-10">
+                        <li class="flex gap-10 justify-center align-center">
+                            <a href="mailto:Mymail@rosure.com" target="_blank" aria-label="Send an email">
+                                <span class="flex align-center justify-center">
+                                    <svg class="icon-contact-inf feather feather-mail" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="flex gap-10 justify-center align-center">
+                            <a href="#" target="_blank" aria-label="Visit GitHub profile">
+                                <span class="flex align-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-contact-inf feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </span>
+                            </a>
+                        </li>
+    
+                        <li class="flex gap-10 justify-center align-center">
+                            <a href="#" target="_blank" aria-label="Visit LinkedIn profile">
+                                <span class="flex align-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-contact-inf feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </span>
+                            </a>
+                        </li>
+    
+                        <li class="flex gap-10 justify-center align-center">
+                            <a href="#" target="_blank" aria-label="Visit Facebook Profile">
+                                <span class="flex align-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-contact-inf feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <div class="copyrights">
+                        © 2025 Rosure. All Rights Reserved.
+                    </div>
+                </div>
+            </aside>
+        <!-- End of menu -->
+
+    <!-- Main -->
+        <main id="main" class="flex justify-between align-center w-100">
+
+        <!-- Sections -->
+            <section class="content__sections flex justify-center align-center">
+
+            <!--01 TOP -->
+                <section id="top" class="flex justify-center wrap gap-40 section__tab section__tab--1 section_tab--active">
+
+                    <!-- Section number -->
+                    <h2 class="index-section" data-animation="fade-in">01</h2>
+
+                    <!-- Content -->
+                    <div class="top-img-content animated-image flex justify-center align-center relative"   data-animation="slide-up">
+                        <img class="my-webdev-pic w-100 h-auto" src="./assets/img/webdev.jpg" alt="me">
+                        <img class="figure-rosure-logo" src="./assets/img/figure-logo.svg" alt="logo rosure porfolio">
+                    </div>
+
+                    <div class="top-text" data-animation="slide-right">
+                        <h3 class="title-section">Hey I am
+                            <br> 
+                            <span class="text top-text-span">Daniel</span>
+                        </h3>
+                        <p>
+                            Web developer from Shanghai with +4 years of experience. I create solutions that translate into captivating and functional web experiences by developing, optimizing and managing web applications to bring them to their maximum potential.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="btns-content flex align-center wrap gap-20">
+
+                            <a class="btn relative" href="mailto:Mymail@rosure.com" target="_blank">
+                                <h3 class="flex align-center justify-center gap-10">
+                                    <span class="flex align-center justify-center">
+                                        <img src="./assets/icons/mail.svg" alt="mail">
+                                    </span>
+                                    Contact me
+                                </h3>
+                            </a>
+
+                            <a class="btn relative" href="#" target="_blank">
+                                <h3 class="flex align-center justify-center gap-10">
+                                    <span class="flex align-center justify-center">
+                                        <img src="./assets/icons/linkedin.svg" alt="linkedin">
+                                    </span>
+                                    Linked In
+                                </h3>
+                            </a>
+
+                            <a class="btn relative" href="#" target="_blank">
+                                <h3 class="flex align-center justify-center gap-10">
+                                    <span class="flex align-center justify-center">
+                                        <img src="./assets/icons/github.svg" alt="github">
+                                    </span>
+                                    Github
+                                </h3>
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
+            <!-- End of top section -->
+
+            <!--02 About Me -->
+                <section id="about" class="section__tab section__tab--2 relative">
+                    
+                    <!-- Section number -->
+                    <h2 class="index-section" data-animation="fade-in">02</h2>
+
+                    <!-- Content -->
+                    <section class="about-text-content flex justify-between wrap gap-10 w-100">
+                        <article class="about-text">
+                            <!-- Title -->
+                            <h3 class="title-section" data-animation="slide-left">About <span class="marked">Me</span></h3>
+
+                            <p class="p-about-text" data-animation="slide-left">I’m a passionate web developer dedicated to crafting exceptional digital experiences. With a strong foundation in front-end and back-end technologies, I specialize in creating responsive, user-friendly websites that deliver seamless functionality and visually appealing designs.</p>
+                            
+
+                            <!-- Personal Info -->
+                            <ul class="personal-inf" data-animation="slide-right">
+                                <li>
+                                    <span class="span-title">
+                                        Name 
+                                    </span>
+                                    <span class="span-inf">
+                                        : Daniel Brooks
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="span-title">
+                                        Age 
+                                    </span>
+                                    <span class="span-inf">
+                                        : 25
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="span-title">
+                                        Location
+                                    </span>
+                                    <span class="span-inf">
+                                        : Shangai
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="span-title">
+                                        Email 
+                                    </span>
+                                    <span class="span-inf">
+                                        : Mymail@rosure.com
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <div class="mid-about-sect flex justify-between align-center gap-30" data-animation="slide-left">
+                                <!-- Download CV button -->
+                                <a class="download-cv-btn pointer flex justify-between align-center gap-10" href="./cv/resume.pdf" download="cv.pdf">
+                                    Download CV
+                                    <img src="./assets/icons/download.svg" alt="download icon">
+                                </a>
+
+                                <div class="line"></div>
+
+                                <!-- Buttons -->
+                                <ul class="socials-portfolio flex gap-30">
+                                    <li class="flex justify-center align-center">
+                                        <img src="./assets/icons/mail.svg" alt="Linked In">
+                                    </li>
+                                    <li class="flex justify-center align-center">
+                                        <img src="./assets/icons/github.svg" alt="Github">
+                                    </li>
+                                    <li class="flex justify-center align-center">
+                                        <img src="./assets/icons/linkedin.svg" alt="Linked In">
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="lang-sect" data-animation="slide-left">
+                                <h3>
+                                    Language <span class="marked">Skills</span>
+                                </h3>
+                                <ul class="lang-list flex align-center gap-50">
+                                    <li class="lang animated">
+                                        <p class="lang-percent">100<span class="marked">%</span></p>
+                                        English
+                                    </li>
+                                    <li class="lang animated">
+                                        <p class="lang-percent">95<span class="marked">%</span></p>
+                                        Spanish
+                                    </li>
+                                    <li class="lang animated">
+                                        <p class="lang-percent">95<span class="marked">%</span></p>
+                                        French
+                                    </li>
+                                    <li class="lang animated">
+                                        <p class="lang-percent">80<span class="marked">%</span></p>
+                                        Chinese
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+
+                        <!-- Counter Section -->
+                        <div class="my-journey-section" data-animation="slide-up">
+                            <h3 class="title-journey">
+                                My <span class="marked">Journey</span>
+                            </h3>
+                            <div class="my-joruney-content flex align-center wrap gap-50">
+                                <article class="my-journey flex align-center flex-column animated">
+                                    <h3>10<span class="marked">+</span></h3>
+                                    <p>Years of Experience</p>
+                                </article>
+
+                                <article class="my-journey flex align-center flex-column animated">
+                                    <h3>8<span class="marked">+</span></h3>
+                                    <p>Certifications Obtained</p>
+                                </article>
+    
+                                <article class="my-journey flex align-center flex-column animated">
+                                    <h3>130<span class="marked">+</span></h3>
+                                    <p>Happy Clients</p>
+                                </article>
+    
+                                <article class="my-journey flex align-center flex-column animated">
+                                    <h3>240<span class="marked">+</span></h3>
+                                    <p>Projects Done</p>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- End of about section -->
+            
+            <!--03 What do I do -->
+                <section id="what-do-i-do" class="section__tab section__tab--3">
+                    <!-- Section number -->
+                    <h2 class="index-section" data-animation="fade-in">03</h2>                    
+                    
+                    <!-- Content -->
+                    <section class="services-content flex align-center flex-column w-100 gap-20">
+                        <!-- Title -->
+                        <h3 class="title-section w-100" data-animation="slide-left">What do <span class="marked">I do</span></h3>
+
+                        <div class="services-section flex align-center gap-20 wrap" data-animation="slide-up">   
+
+                            <article class="service animated-scale">
+                                <div class="icon-service">
+                                    <img src="./assets/icons/layout.svg" alt="web design">
+                                </div>
+                                <div>
+                                    <h4>Web Design</h4>
+                                    <p>Designing modern websites optimized for an excellent user experience.</p>
+                                </div>
+                            </article>
+
+                            <article class="service animated-scale">
+                                <div class="icon-service">
+                                    <img src="./assets/icons/code.svg" alt="web development">
+                                </div>
+                                <div>
+                                    <h4>Web Development</h4>
+                                    <p>Developing functional, fast websites using cutting-edge technologies.</p>
+                                </div>
+                            </article>
+
+                            <article class="service animated-scale">
+                                <div class="icon-service">
+                                    <img src="./assets/icons/seo.svg" alt="SEO">
+                                </div>
+                                <div>
+                                    <h4>SEO</h4>
+                                    <p>Search engine optimization to improve your online visibility and reach.</p>
+                                </div>
+                            </article>
+
+                            <article class="service animated-scale">
+                                <div class="icon-service">
+                                    <img src="./assets/icons/ux-ui.svg" alt="ux/ui design">
+                                </div>
+                                <div>
+                                    <h4>UI/UX Design</h4>
+                                    <p>Creating intuitive interfaces and engaging user experiences.</p>
+                                </div>
+                            </article>
+                            
+                        </div>
+                        
+                    </section>
+                </section>
+            <!-- End of what do i do section section -->
+                
+            <!--04 Skills -->
+                <section id="my-skills" class="section__tab section__tab--4">
+                    <!-- Section number -->
+                    <h2 class="index-section" data-animation="fade-in">04</h2>
+                    
+                    <!-- Content -->
+                    <section class="content-section-skills flex align-center flex-column w-100 gap-20">
+                        <!-- Title -->
+                        <h3 class="title-section w-100" data-animation="slide-left">My <span class="marked">Skills</span></h3>
+
+                        <section class="skills-section w-100 gap-30" data-animation="slide-up">
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img src="./assets/icons/skills/html-logo.svg" alt="html icon">
+                                    <p class="percent-text">95<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>HTML</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img src="./assets/icons/skills/sass-logo.svg" alt="css icon">
+                                    <p class="percent-text">95<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>SASS</h4>
+                            </article>
+                            <article class="skill animated">
+                                <figure></figure>
+                                <div class="content-img-percent">
+                                    <img src="./assets/icons/skills/javascript-logo.svg" alt="javascript icon">
+                                    <p class="percent-text">95<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>JavaScript</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img class="no-bg-img" src="./assets/icons/skills/react-logo.svg" alt="react icon">
+                                    <p class="percent-text">90<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>React</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img src="./assets/icons/skills/wordpress-logo.svg" alt="wordpress icon">
+                                    <p class="percent-text">90<span class="marked">%</span></p>
+                                </div>  
+                                <figure></figure>
+                                <h4>Wordpress</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img src="./assets/icons/skills/php-logo.svg" alt="php icon">
+                                    <p class="percent-text">85<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>PHP</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img class="no-bg-img" src="./assets/icons/skills/git-logo.svg" alt="git icon">
+                                    <p class="percent-text">85<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>Git</h4>
+                            </article>
+                            <article class="skill animated">
+                                <div class="content-img-percent">
+                                    <img class="no-bg-img" src="./assets/icons/skills/python-logo.svg" alt="python icon">
+                                    <p class="percent-text">80<span class="marked">%</span></p>
+                                </div>
+                                <figure></figure>
+                                <h4>Python</h4>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+                <!-- End of skills section -->
+
+                <!--05 Experience -->
+                <section id="experience" class="section__tab section__tab--5">
+                    <!-- Section number -->
+                    <h2 class="index-section" data-animation="fade-in">05</h2>
+                
+                    <!-- Content -->
+                    <section class="experience-content">
+                        <!-- Title -->
+                        <h3 class="title-section w-100" data-animation="slide-left">Work <span class="marked">Experience</span></h3>
+                
+                        <section class="experience-section w-100 flex align-center flex-column" data-animation="slide-right">
+
+                            <article class="exp">
+                                <figure class="dot"></figure>
+                                <div class="job-info">
+                                    <h4 class="job">Front-End Developer</h4>
+                                    <h5 class="company-name">PixelForge Solutions</h5>
+                                    <h6 class="date">February 2021 - Present...</h6>
+                                </div>
+                                <p class="job-description">
+                                    Responsible for developing responsive and user-friendly interfaces, improving the overall user experience across Google products.
+                                    <a href="#" class="see-more-btn flex align-center">See more
+                                        <img src="./assets/icons/arrow.svg" alt="see more button">
+                                    </a>
+                                </p>
+                            </article>
+                
+                            <article class="exp">
+                                <figure class="dot"></figure>
+                                <div class="job-info">
+                                    <h4 class="job">Web Designer</h4>
+                                    <h5 class="company-name">WebCrafters Studio</h5>
+                                    <h6 class="date">2020 - 2021</h6>
+                                </div>
+                                <p class="job-description">
+                                    Designed visually appealing and functional websites for Microsoft products, focusing on both desktop and mobile optimization.
+                                    <a href="#" class="see-more-btn flex align-center">See more
+                                        <img src="./assets/icons/arrow.svg" alt="see more button">
+                                    </a>
+                                </p>
+                            </article>
+                
+                            <article class="exp">
+                                <figure class="dot"></figure>
+                                <div class="job-info flex flex-column">
+                                    <h4 class="job">Full Stack Developer</h4>
+                                    <h5 class="company-name">TechnoWeb Creations</h5>
+                                    <h6 class="date">2018 - 2020</h6>
+                                </div>
+                                <p class="job-description">
+                                    Worked on end-to-end development of web applications, collaborating with teams to deliver innovative software solutions.
+                                    <a href="#" class="see-more-btn flex align-center">See more
+                                        <img src="./assets/icons/arrow.svg" alt="see more button">
+                                    </a>
+                                </p>
+                            </article>
+                
+                        </section>
+                    </section>
+                </section>   
+                <!--05 End of experience section -->
+
+                <!-- 06 Projects-->
+                <section id="projects" class="section__tab section__tab--6">
+                    <!-- Section number -->                    
+                    <h2 class="index-section" data-animation="fade-in">06</h2>
+
+                    <!-- Content -->
+                    <section class="projects-content">
+                        <!-- Title -->
+                        <h3 class="title-section w-100" data-animation="slide-left">My <span class="marked">Projects</span></h3>
+
+                        <ul class="filter-controls flex gap-20 wrap">
+                            <li class="filter-btn active" data-category="all">All</li>
+                            <li>/</li>
+                            <li class="filter-btn" data-category="web-development">Web Development</li>
+                            <li>/</li>
+                            <li class="filter-btn" data-category="web-design">WebDesign</li>
+                            <li>/</li>
+                            <li class="filter-btn" data-category="seo">SEO</li>
+                        </ul>
+                        
+                        <section class="projects-section wrap flex w-100" data-animation="slide-up">
+
+                            <article class="project-item animated-scale" data-category="all">
+                                <div class="project-img-content">
+                                    <img src="./assets/img/dark-placeholder.png" alt="placeholder image">
+                                </div>
+                                <div class="info-project">
+                                    <h4>
+                                        Project 01
+                                        <a href="#" class="preview-btn">
+                                            <img src="./assets/icons/link.svg" alt="link icon">
+                                        </a>
+                                    </h4>
+                                    <ul class="technologies-content flex gap-10">
+                                        <li class="technology-pill javascript-pill">
+                                            <img src="./assets/icons/skills/javascript-logo.svg" alt="javascript logo">
+                                            JavaScript
+                                        </li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/html-logo.svg" alt="html logo">
+                                            HTML</li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/sass-logo.svg" alt="sass logo">
+                                            Sass
+                                        </li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/php-logo.svg" alt="php logo">
+                                            PHP
+                                        </li>
+                                    </ul>   
+                                    <p>A sleek and responsive portfolio designed for creative professionals. Features dynamic project showcases, smooth animations, and an interactive contact form to connect with potential clients.
+                                    </p>
+                                </div>   
+                            </article>
+
+                            <article class="project-item animated-scale" data-category="web-development">
+                                <div class="project-img-content">
+                                    <img src="./assets/img/dark-placeholder.png" alt="placeholder image">
+                                </div>
+                                <div class="info-project">
+                                    <h4>
+                                        Project 02
+                                        <a href="#" class="preview-btn">
+                                            <img src="./assets/icons/link.svg" alt="link icon">
+                                        </a>
+                                    </h4>
+                                    <ul class="technologies-content flex gap-10">
+                                        <li class="technology-pill javascript-pill">
+                                            <img src="./assets/icons/skills/javascript-logo.svg" alt="javascript logo">
+                                            JavaScript
+                                        </li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/html-logo.svg" alt="html logo">
+                                            HTML</li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/sass-logo.svg" alt="sass logo">
+                                            Sass
+                                        </li>
+                                    </ul>
+                                    <p>A cutting-edge platform for creating, selling, and buying NFTs. Includes a minting tool, secure wallet integration, and a vibrant community space for collectors and creators.
+                                    </p>
+                                </div>  
+                            </article>
+
+                            <article class="project-item animated-scale" data-category="web-design">
+                                <div class="project-img-content">
+                                    <img src="./assets/img/dark-placeholder.png" alt="placeholder image">
+                                </div>
+                                <div class="info-project">
+                                    <h4>
+                                        Project 03
+                                        <a href="#" class="preview-btn">
+                                            <img src="./assets/icons/link.svg" alt="link icon">
+                                        </a>
+                                    </h4>
+                                    <ul class="technologies-content flex gap-10">
+                                        <li class="technology-pill javascript-pill">
+                                            <img src="./assets/icons/skills/javascript-logo.svg" alt="javascript logo">
+                                            JavaScript
+                                        </li>
+                                        <li class="technology-pill">
+                                             <img src="./assets/icons/skills/html-logo.svg" alt="html logo">
+                                            HTML</li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/sass-logo.svg" alt="sass logo">
+                                            Sass
+                                        </li>
+                                    </ul>
+                                    <p>A futuristic landing page titled. Showcases immersive features, community highlights, and seamless server integrations designed for an elevated roleplay experience.
+                                    </p>
+                                </div>
+                            </article>
+                            
+                            <article class="project-item animated-scale" data-category="seo">
+                                <div class="project-img-content">
+                                    <img src="./assets/img/dark-placeholder.png" alt="placeholder image">
+                                </div>
+                                <div class="info-project">
+                                    <h4>
+                                        Project 04
+                                        <a href="#" class="preview-btn">
+                                            <img src="./assets/icons/link.svg" alt="link icon">
+                                        </a>
+                                    </h4>
+                                    <ul class="technologies-content flex gap-10">
+                                        <li class="technology-pill javascript-pill">
+                                            <img src="./assets/icons/skills/javascript-logo.svg" alt="javascript logo">
+                                            JavaScript
+                                        </li>
+                                        <li class="technology-pill">
+                                             <img src="./assets/icons/skills/html-logo.svg" alt="html logo">
+                                            HTML</li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/sass-logo.svg" alt="sass logo">
+                                            Sass
+                                        </li>
+                                        <li class="technology-pill">
+                                            <img src="./assets/icons/skills/php-logo.svg" alt="php logo">
+                                            PHP
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        A sophisticated website for showcasing architectural projects. Includes detailed project portfolios, 3D render galleries, and a blog for sharing design insights and innovations.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </section>
+
+                        <footer class="projects-footer">
+                            <p>
+                              Images used in the "projects" section of this demo are courtesy of 
+                              <a href="https://www.freepik.com" target="_blank">Freepik</a>.
+                              These images are for demonstration purposes only and are not included in the final product.
+                            </p>
+                          </footer>
+                    </section>
+                </section>
+                <!--06 End of projects section -->
+
+                <!-- 07 Contact -->
+                <section id="contact" class="section__tab section__tab--7">
+                    <!-- Section Number -->
+                    <h2 class="index-section" data-animation="fade-in">07</h2>
+                    
+                    <!-- Content -->
+                    <section class="contact-content">
+
+                        <!-- Title -->
+                        <h3 class="title-section w-100" data-animation="slide-left">Contact <span class="marked">Me</span></h3>
+                    
+                        <section class="contact-section w-100" data-animation="slide-right">
+                            <!-- Form -->
+                            <form id="contact-form" 
+                            class="contact-form flex justify-center align-center flex-column" 
+                            method="post"
+                        >
+                            <input type="text" name="name" class="name" placeholder="Name" required>
+                            <input type="email" name="email" class="email" placeholder="Email" required>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <input class="pointer submit-btn" type="submit" name="submit" value="SUBMIT" id="submit-button">
+                        </form>
+                        <div id="form-response" class="form-response"></div>
+
+                            <ul class="info-socials">
+                                <li>
+                                    <div class="img-content">
+                                        <img src="./assets/icons/mail.svg" alt="mail icon">
+                                    </div>
+                                    <a href="mailto:Mymail@rosure.com" target="_blank" aria-label="Send an email" class="flex justify-center align-center gap-10">
+                                        <h4>Mymail@rosure.com</h4>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="img-content">  
+                                        <img src="./assets/icons/linkedin.svg" alt="linkedin icon">
+                                    </div>
+                                    <a href="#" target="_blank" aria-label="Visit LinkedIn Profile" class="flex justify-center align-center gap-10">
+                                        <h4>Daniel Brooks</h4>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="img-content">  
+                                        <img src="./assets/icons/github.svg" alt="github icon">
+                                    </div>
+                                    <a href="#" target="_blank" aria-label="Visit Github Profile" class="flex justify-center align-center gap-10">
+                                        <h4>Daniel_Brooks</h4>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="img-content">
+                                        <img src="./assets/icons/phone.svg" alt="phone icon" >
+                                    </div>
+                                    <h4>+1 2727 222 222 </h4>
+                                </li>
+                                <li>
+                                    <div class="img-content">  
+                                        <img src="./assets/icons/location.svg" alt="">
+                                    </div>
+                                    <h4>Shanghai</h4>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+                <!--07 End of Contact section -->
+            </section>
+        </main>    
+    
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/open-menu.js"></script>
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/dark-light-theme.js"></script>
+    <script src="./assets/js/send-email.js"></script>
+    <script src="./assets/js/projects-filter.js"></script>
 </body>
 </html>

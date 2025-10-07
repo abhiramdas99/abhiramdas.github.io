@@ -1,1 +1,0 @@
-# ahiramdas.github.io
